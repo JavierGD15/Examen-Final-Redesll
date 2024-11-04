@@ -8,9 +8,10 @@
 
 # Dispositivos 
 - Conexión a Cloud
-- 16 PC 
-- 1 SW capa 3
-- 1 SW capa 2
+- Servidor Local
+- 800 PC 
+- 19 SW capa 3
+- 15 SW capa 2
 
 # Comandos Utilizados 
 
@@ -120,5 +121,22 @@ exit
 ## Switches capa 2
 
 ```
+enable
+write erase
+configure terminal
+vtp mode client
+vtp domain EternalSpring
+
+
+interface fa0/1
+switchport mode trunk
+
+interface Fa0/2
+switchport mode access
+switchport access vlan 50
+exit
+exit
 
 ```
+
+<img width="1333" alt="image" src="https://github.com/user-attachments/assets/3845c790-82d0-44c1-8494-fdccfedf2bc0">
