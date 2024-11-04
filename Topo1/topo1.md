@@ -126,3 +126,5 @@ switchport mode access
 switchport access vlan 50
 exit
 ```
+<img width="556" alt="image" src="https://github.com/user-attachments/assets/87f38eb2-8c76-4917-98d5-da33b2826402">
+
